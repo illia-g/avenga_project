@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Results</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+Winner__c ==  Podium_Second__c, 
+Winner__c == Podium_Third__c,
+Podium_Second__c == Podium_Third__c)</errorConditionFormula>
+    <errorMessage>Results have to be unique</errorMessage>
+</ValidationRule>
